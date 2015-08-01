@@ -1,0 +1,20 @@
+{
+  "name": "eat-wrapper",
+  "description": "Wrapper functions for the Edinburgh Associative Thesaurus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify www/demo.js -o www/bundle.js",
+    "test": "standard && node test.js",
+    "watch": "watchify www/demo.js -o www/bundle.js --debug --verbose",
+    "postInstall": "curl https://raw.githubusercontent.com/dariusk/ea-thesaurus/master/ea-thesaurus.json >> eat.json"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "standard": "*",
+    "tape": "*",
+    "watchify": "*"
+  },
+  "license": "MIT",
+  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)"
+}
