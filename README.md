@@ -44,7 +44,7 @@ For example, in this instance: `AEROPLANE [ { FLIGHT: '6' }, { PLANE: '3' }]`, f
 => returns the formatted json object of {associatedWord: value, ...} for that word
 
 `eatWrapper.eat`
-=> ginormous json of {WORD [{ASSOC-WORD: 'VALUE'}, ...]}
+=> returns ginormous JSON object of {WORD {ASSOC-WORD: 'VALUE', ...}, ...}
 
 ### USAGE/IDEAS
 
